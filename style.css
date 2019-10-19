@@ -16,7 +16,9 @@ header{
     color:white;
     padding: 15px;
 }
-footer{
+    
+
+/* footer{
     background-color: black;
     width: 100%;
     padding: 5px 0 15px 0;
@@ -91,7 +93,7 @@ footer{
     .youtube:hover{
         border-color:#dd4b39;
         box-shadow: 0px 0px 35px #dd4b39;
-    }
+    } */
 .container{
     max-width: 1000px;
     margin: auto;
@@ -125,6 +127,7 @@ header ul{
 
 #sidebar{
     width: 23%;
+    min-height: 912px;  
 }
 #content{
     width: 75%;
@@ -195,13 +198,76 @@ cursor: pointer;
 background: #6f8d12;
 }
 
+footer{
+    width: 100%;
+    background:#5e5e5e;
+    color:white;
+    padding: 15px;
+}
+footer a{
+    color: white;
+}
+footer .container > div{
+    max-width: 260px;
+    width:100%;
+}
+footer .container{
+    align-items: flex-start;
+}
+footer h3{
+    margin: 0 0 15px 0;
+}
+.f-links a{
+    display: block;
+    padding: 0 0 5px 0;
+}
+.f-links a:hover{
+    text-decoration:underline
+}
+.form-subscribe, .social-links{
+display: flex;
+flex-direction: column;
+}
+.form-subscribe input{
+    margin-bottom: 15px;
+    height: 30px;
+    padding: 5px;
+}
+.form-subscribe button{
+    background: #a3c639;
+    border:none;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+.social-links a{
+    padding: 0 0 15px 0;
+    display: block;
+    font-size: 20px;
+}
+.social-links{
+    padding-left: 100px;
+}
 
 @media(max-width: 960px){
 .product{
     width: 32%;
 }
 }
-
+@media(max-width: 830px){
+    footer >div.container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #sidebar, #content{
+        min-height: 0;
+    }
+    footer > div.container > div{
+        text-align: center;
+        padding-left: 0;
+        margin-bottom: 15px;
+    }
+}
 @media(max-width: 725px){
     header .container{
             flex-wrap: wrap;
