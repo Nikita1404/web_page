@@ -16,9 +16,9 @@ header{
     color:white;
     padding: 15px;
 }
-    
-
-
+    button{
+        border-radius: 4px;
+    }
 .container{
     max-width: 1000px;
     margin: auto;
@@ -163,6 +163,9 @@ flex-direction: column;
     border:none;
     padding: 5px 15px;
     cursor: pointer;
+}
+.form-subscribe button:hover{
+    background:#6f8d12;
 }
 .social-links a{
     padding: 0 0 15px 0;
